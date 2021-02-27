@@ -1,9 +1,9 @@
 
-// import {
-//     DESCARGAR_INFORMACION,
-//     DESCARGAR_INFORMACION_EXITO,
-//     DESCARGAR_INFORMACION_ERROR
-// } from '../types'
+import {
+    GET_INFORMATION,
+    GET_INFORMATION_SUCCESS,
+    GET_INFORMATION_ERROR
+} from '../types'
 
 
 const initialState ={
@@ -15,6 +15,25 @@ const initialState ={
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function (state = initialState, action) {
     switch (action.type) {
+        case  GET_INFORMATION :
+            return{
+                ...state,
+                loading:action.payload
+            }
+        case GET_INFORMATION_SUCCESS:
+            return{
+                ...state,
+                loading: false,
+                information: action.payload,
+                error: null
+            }
+        case GET_INFORMATION_ERROR:
+            return{
+                ...state,
+                loading:false,
+                error: action.payload
+            }
+
         default:
             return state
     }

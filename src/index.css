@@ -9,28 +9,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
   }
-  
-  h1 a {
-    font-size: 1.8rem;
-  }
-  h1 a.text-light:hover {
-    color: white!important;
-    text-decoration: none!important;
-  }
-  .nuevo-post{
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
+    
   .btn {
     font-weight: bold;
   }
-  .form-group label,
-  .list-group-item {
-    font-size: 1.4rem;
+
+  .footer{
+    background: #F5EEEC;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    margin: 0;
+    padding:0;
+  }
+  .footer p{
+    text-align: center;
+    margin: 0;
+    padding: 2px 0;
   }
   
-  .navbar .btn {
+  .navbar .btn input {
     flex:1;
   }
   @media (min-width:768px){
@@ -38,14 +36,13 @@ body {
         flex: 0 1 auto;
       }
   }
-  .acciones {
-    margin: 1rem 0;
-  }
-  @media (min-width:768px) {
-    .acciones{
-      margin: 0;
-    }
-  }
-  .acciones > *{
-    flex: 1;
-  }
+
+.containermodules{
+  padding: 5px;
+}
+.modulesContent{
+  height: 40vh;
+  padding: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
