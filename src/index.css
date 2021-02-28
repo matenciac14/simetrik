@@ -16,8 +16,7 @@ body {
 
   .footer{
     background: #F5EEEC;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
     text-align: center;
     margin: 0;
     padding:0;
@@ -43,6 +42,9 @@ body {
 .modulesContent{
   height: 40vh;
   padding: 0;
+  
+}
+.card ul {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
