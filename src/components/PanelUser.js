@@ -10,9 +10,6 @@ const PanelUser = () => {
         setDataUser(info)
     }, [info])
 
-    const anyFunction = (param_1) => (param_2) => param_1 + param_2
-    console.log(anyFunction())
-
     return (
         <div className=" card col-sm-12 col-md-6 modulesContent mb-2">
             <h4 className='card-header'>Usuarios</h4>
