@@ -13,12 +13,16 @@ const PanelConciliaciones = () => {
         <div className=" card col-sm-12 col-md-6 modulesContent mb-2">
         <h4 className='card-header'>Conciliaciones</h4>
         <ul className="list-group">
-        {dataConciliaciones ? dataConciliaciones.map((item) => (
+        {dataConciliaciones && dataConciliaciones.length > 0 ? dataConciliaciones.map((item) => (
             <li key={item._id} className="list-group-item d-flex justify-content-between align-items-center">
                {item.conciliationName}
-                <span className="badge badge-primary badge-pill" onClick={() => alert('holaaa')}>Ver</span>
+                <span className="badge badge-primary badge-pill" onClick={() => alert('holaaa, aca crearia un componente para msotrar la info')}>Ver</span>
             </li>
-        )) : null}
+        )) : 
+            <li key={1} className="list-group-item d-flex justify-content-between align-items-center">
+               No hemos encontrado datos
+            </li>
+        }
             
         </ul>
     </div>

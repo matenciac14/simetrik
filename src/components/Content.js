@@ -15,6 +15,7 @@ const Content = () => {
 
 
     return (
+        <>
         <div className="container containermodules">
             <div className="row ">
                 <PanelUser/>
@@ -25,6 +26,7 @@ const Content = () => {
                 <PanelConciliaciones/>
             </div>
         </div>
+        </>
     )
 }
 

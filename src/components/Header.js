@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import '../index.css'
 import {  useDispatch } from 'react-redux';
-import { setDataSearch } from '../actions/informationActions'
+import { getInformationAction, setDataSearch } from '../actions/informationActions'
 
 const Header = () => {
    const dispatch = useDispatch()
@@ -21,7 +21,7 @@ const Header = () => {
          type:typeinput,
          inputvalue:e.target.value
       })
-
+      dispatch(getInformationAction())
    }
 
    const SerachInformation = (e) => {
@@ -30,11 +30,9 @@ const Header = () => {
       //valuidations
       if (valueInputSearch.value === "" || valueInputSearch.type === "") {
          console.log('ingresa la data correcta')
-      } else {
+      } else {                  
          dispatch(setDataSearch(valueInputSearch))
-         setTypeInput('text')
          setValueInputSearch({
-            type: 'text',
             inputvalue: ''
          })
       }
