@@ -50,5 +50,5 @@ En caso dado el tiempo de desarrollo tenga en cuentas las pruebas es la manera d
 
 ### 7.¿Que nos permite hacer la siguiente declaración?
 `const anyFunction = (param_1) => (param_2) => param_1 + param_2`
-es un closure que nso permite sumar 2 valores  esta toma una funcion como parametro de la funcion principal  al ejecutarlar
+es un closure que nos permite sumar 2 valores  esta toma una funcion como parametro de la funcion principal  al ejecutarlar
  anyFunction(2)(3)  resultado 5
