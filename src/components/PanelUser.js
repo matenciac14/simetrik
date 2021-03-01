@@ -10,7 +10,8 @@ const PanelUser = () => {
         setDataUser(info)
     }, [info])
 
-    console.log(" ========", dataUser)
+    const anyFunction = (param_1) => (param_2) => param_1 + param_2
+    console.log(anyFunction())
 
     return (
         <div className=" card col-sm-12 col-md-6 modulesContent mb-2">
