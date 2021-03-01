@@ -22,22 +22,20 @@ que lo disfrutes mcuhas gracias!!!
 
 
 ### 1. ¿Por qué no debería usar la librería JQuery, si estoy usando ReactJS?
-Porque ReactJS posee comportamientos integrados o nativos en su libreria, los cuales eran integradosa nuestra app con el uso de Jquery,
-estos comportamientos o habilidades son:
+Porque ReactJS posee comportamientos integrados o nativos en su libreria, los cuales eran integrados a nuestra app con el uso de Jquery,
+algunos de estos comportamientos o habilidades son:
 - acceso unico a lementos del DOM
 - interactuar con APIS
 - escribir css y crear animaciones bajo JSX
 
 ### 2. ¿Porque usarias Hooks de las nuevas versiones de ReactJS, en lugar de class component?
-a mi parecer lo Uso por tendencia, comodidad (evitar .this y bind) ,tambien es lo que sugieren los creadores de la herramienta,
-pero hasta el momento podemos hacer features utilizando las dos formas aunque el soporte o background de classcomponent es fuerte 
-
+JavaScript al transpilar Hooks generan menos codigo que transpilar ClassComponent (Performance), al usar arrow functions tenemos disponible el contexto .this dentro del componente y tambien tomar la sugerencia de los creadores de la herramienta al momento de ser usarla y sacarle el mayor provecho
 ### 3. ¿Que es un archivo JSX?
 es una extension de Javascript para presentar Elementos al DOM usado en ReactJS para evitar separar la logica del renderizado
 
 ### 4. ¿Que diferencia hay entre una function y una arrow function de Javascript?
 partiendo de que una es declarativa y la otra es expresiva, lo cual varia en como afecta el contexto (hoisting)
-tambien la funcion flecha no posee .this, arguments, super.., lo que quiere decir que son anonimas y tampoco se usan como contructores
+tambien la funcion flecha son anonimas y no se usan como contructores
 
 ### 5. ¿Qué es Redux y cómo nos ayuda en los proyectos?
 es una herramienta que nos aporta un manejo de estado en nuestras app, "Adopta el comportamiento de Flux".
@@ -48,4 +46,9 @@ realmente es una heramienta que esta pensada para proyectos de mediana a gran es
 - menejode data con asincronismo al hacer consumo de apis (usando middlewares como thunk o saga) 
 
 ### 6. ¿Por qué usuarios pruebas unitarias en tu código?
-digamos que en este punto depende muicho del tema horas de desarrollos que nos brinden, en caso dado el tiempo de desarrollo tenga en cuentas las pruebas es la manera de certificar la feature, funcion y/o accion que desarrollamos para luego ser integrada en el resto de la app 
+En caso dado el tiempo de desarrollo tenga en cuentas las pruebas es la manera de probar y manejar el comportamiento de la feature, funcion y/o accion que desarrollamos para luego ser integrada con las demas funcionalidades de nuestra  app 
+
+### 7.¿Que nos permite hacer la siguiente declaración?
+`const anyFunction = (param_1) => (param_2) => param_1 + param_2`
+es un closure que nso permite sumar 2 valores  esta toma una funcion como parametro de la funcion principal  al ejecutarlar
+ anyFunction(2)(3)  resultado 5
